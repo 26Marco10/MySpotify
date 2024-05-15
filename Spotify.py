@@ -1238,4 +1238,4 @@ def delete_from_artist(artist_name, song_name):
 
     return redirect("/no_internet_artist/" + artist_name)
 if __name__ == '__main__':
-    app.run(port=8000,debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
