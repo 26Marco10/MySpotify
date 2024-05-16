@@ -30,10 +30,10 @@ Replace `image_name` with your desired name for the Docker image.
 
 ### Running the Application
 
-After creating the Docker image, you can run the application using the following command:
+After creating the Docker image, create a volume. Then, you can run the application using the following command:
 
 ```
-docker run --rm -p 8000:8000 image_name
+docker run --rm -p 8000:8000 -v volume_name:/app/static image_name
 ```
 
 The application will then be accessible at `http://localhost:8000` in your browser.
